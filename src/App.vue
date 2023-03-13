@@ -1,30 +1,29 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import Button from './components/Button.vue';
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <section class="heroWrapper flex-col">
+    <div class="heroTitle">
+      <h1>
+        Discover art of the world
+      </h1>
+    </div>
+    <div class="heroButton">
+      <Button content="Art" />
+    </div>
+  </section>
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+
+.heroWrapper{
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+.heroWrapper .heroButton{
+  align-self: flex-end;
 }
 </style>
