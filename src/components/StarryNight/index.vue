@@ -21,8 +21,8 @@ const randomInteger = function(min, max) {
 const config = {
     colors: [
         { low: rgb(127,68,255), high: rgb(225,68,90) },
-        { low: rgb(225, 109, 68), high: rgb(77, 115, 241) },
-        { low: rgb(77, 115, 241), high: rgb(225, 109, 68) }
+        { low: rgb(80, 111, 206), high: rgb(176, 154, 32) },
+        { low: rgb(77, 115, 241), high: rgb(221, 221, 209) }, 
     ]
 }
 onMounted(async() => {
@@ -44,7 +44,7 @@ onMounted(async() => {
     
     // Set sizes and set scene/camera
     let scene = new THREE.Scene();
-    let camera = new THREE.PerspectiveCamera( 75, elWidth / elHeight, 0.1, 1000 );
+    let camera = new THREE.PerspectiveCamera( 20, elWidth / elHeight, 0.1, 1000 );
     
     let i = 2;
     // Check on colors to use
@@ -63,12 +63,12 @@ onMounted(async() => {
             u_resolution: {type: 'v2', value: new THREE.Vector2(elWidth, elHeight) },
             u_mouse: {type: 'v2', value: new THREE.Vector2(0, 0) },
             u_height: {type: 'f', value: 1},
-            u_manipulate: {type: 'f', value: 1 },
+            u_manipulate: {type: 'f', value: 0.6 },
             u_veinDefinition: {type: 'f', value: 20 },
-            u_goCrazy: { type: 't', value: 1 },
+            u_goCrazy: { type: 't', value: 20 }, //1 / 100
             u_inputTexture: {type: 't', value: 1},
-            u_scale: {type: 'f', value: 0.85 },
-            u_clickLength: { type: 'f', value: 1},
+            u_scale: {type: 'f', value: 1.4 }, //0.9
+            u_clickLength: { type: 'f', value: 0.00002}, // 0.2
             u_rand: { type: 'f', value: randomInteger(0, 10) },
             u_rand: {type: 'f', value: new THREE.Vector2(randomInteger(6, 10), randomInteger(8, 10)) }
         },

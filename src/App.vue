@@ -4,9 +4,7 @@ import index from './components/StarryNight/index.vue';
 </script>
 
 <template>
-  <Suspense>
-    <index class="test"/>
-  </Suspense>
+  <index class="test"/>
   <section class="heroWrapper flex-col">
     <div class="heroTitle">
       <h1>
