@@ -6,11 +6,9 @@ import * as THREE from 'three';
 import { ref, onMounted } from 'vue';
 
 let canvas = ref(null);
-// let RefCanvas = $refs.canvas;
 let t = 5;
 let backtrack = false;
-
-const assignRef = (el) => canvas.value = el;
+let renderer;
 
 const rgb = function(r, g, b) {
     return new THREE.Vector3(r, g, b);
@@ -27,25 +25,24 @@ const config = {
         { low: rgb(77, 115, 241), high: rgb(225, 109, 68) }
     ]
 }
-onMounted(() => {
-  assignRef($refs.canvas);
-  console.log(canvas);
-})
-    let renderer = new THREE.WebGLRenderer({
+onMounted(async() => {
+    renderer = new THREE.WebGLRenderer({
         powerPreference: "high-performance",
         antialias: true, 
         alpha: true,
-        // canvas: canvas // canvas is the Id for our HTML5 canvas. Remove this line and Three will auto create a canvas.
+        canvas: canvas.value // canvas is the Id for our HTML5 canvas. Remove this line and Three will auto create a canvas.
     });
+    renderer.setSize( elWidth, elHeight );
+    document.body.appendChild( renderer.domElement )
+    renderer.setPixelRatio( elWidth/elHeight );
+    animate();
+})
     
     // Get el width and height
     let elWidth = window.innerWidth;
     let elHeight = window.innerHeight
     
     // Set sizes and set scene/camera
-    renderer.setSize( elWidth, elHeight );
-    document.body.appendChild( renderer.domElement )
-    renderer.setPixelRatio( elWidth/elHeight );
     let scene = new THREE.Scene();
     let camera = new THREE.PerspectiveCamera( 75, elWidth / elHeight, 0.1, 1000 );
     
@@ -101,10 +98,21 @@ onMounted(() => {
             }
         }
     };
-    animate();
-
 </script>
 
 <template>
-    <!-- <canvas id="canvas" ref="canvas"></canvas> -->
+    <canvas id="canvas" ref="canvas"></canvas>
 </template>
+
+<style scoped>
+
+#canvas{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  transition: all 0.01s ease-out;
+}
+</style>
