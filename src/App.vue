@@ -1,8 +1,10 @@
 <script setup>
 import Button from './components/Button.vue';
+import index from './components/StarryNight/index.vue';
 </script>
 
 <template>
+  <index class="test"/>
   <section class="heroWrapper flex-col">
     <div class="heroTitle">
       <h1>

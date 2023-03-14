@@ -9,6 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@pixi/filter-kawase-blur": "^5.1.1",
+    "debounce": "^1.2.1",
+    "hsl-to-hex": "^1.0.0",
+    "pixi.js": "^7.1.4",
+    "simplex-noise": "^4.0.1",
+    "three": "^0.150.1",
     "vue": "^3.2.45"
   },
   "devDependencies": {
