@@ -107,11 +107,12 @@ onMounted(async() => {
 <style scoped>
 
 #canvas{
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
+  max-height: 100vh;
   z-index: -1;
   transition: all 0.01s ease-out;
 }

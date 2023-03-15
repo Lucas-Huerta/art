@@ -2,13 +2,13 @@
 
 @font-face {
   font-family: "Dahlia";
-  src: url('/public/fonts/dahlia-regular.otf');
+  src: url('/fonts/dahlia-regular.otf');
 }
 
 @font-face {
   font-family: "Dahlia";
   font-weight: bold;
-  src: url('/public/fonts/dahlia-bold.otf');
+  src: url('/fonts/dahlia-bold.otf');
 }
 
 :root {
@@ -65,7 +65,8 @@ button {
 #app {
   /* max-width: 1280px; */
   width: 100%;
-  margin: 2vh 1vw;
+  height: fit-content;
+  /* margin: 2vh 1vw; */
   /* padding: 2rem; */
 }
 
