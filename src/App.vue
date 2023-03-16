@@ -4,7 +4,15 @@ import index from './components/StarryNight/index.vue';
 import MenuArtist from './components/MenuArtist.vue';
 
 // Début, implémenter back ensuite
-let tabArtists = ["oui", "deux", "trois", "adbehdj", "oui", "hihihihihihihihih"]
+let tabArtists = [
+  "Léonard de Vinci",
+  "Pablo Picasso",
+  "Vincent Van Gogh",
+  "Sandro Botticelli",
+  "Edwrad Munch", 
+  "Johannes Vermeer", 
+  "Claude Monet",
+]
 
 </script>
 
@@ -20,7 +28,7 @@ let tabArtists = ["oui", "deux", "trois", "adbehdj", "oui", "hihihihihihihihih"]
       <Button content="Art" />
     </div>
   </section>
-  <section id="wrapper" class="flex-col">
+  <section id="wrapper" class="flex-row">
     <div class="rowArtists flex-col">
       <!-- Faire un v-for avec un tab sans backend pour l'instant  -->
       <MenuArtist v-for="index in tabArtists" :key="index" :artist="index"/>
@@ -48,17 +56,22 @@ let tabArtists = ["oui", "deux", "trois", "adbehdj", "oui", "hihihihihihihihih"]
   margin: 0 2vw 2vh 0;
 }
 
+/* Utiliser calc en fonction de heigth et width, voir même variable en script */
 #wrapper{
   background-color: var(--primary-color);
-  min-height: 80vh;
+  transform: rotate(270deg);
+  /* min-height: 80vh; */
   width: 100vw;
-  align-items: end;
+  height: 100vw;
+  justify-content: center;
+  align-items: center;
 }
 
 .rowArtists{
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   align-items: center;
-  height: fit-content;
+  /* height: fit-content; */
+  height: 100%;
   width: 100%;
 }
 </style>

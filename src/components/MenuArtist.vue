@@ -18,15 +18,16 @@ defineProps({
 
 .oneArtist{
     /* rotate: 270deg; */
-    border-bottom: 1px solid black;
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
 }
 .oneArtist span{
     color: var(--secondary-color);
-    font-family: "Inter";
+    border-bottom: 1px solid black;
     font-size: 90px;
+    display: inline-flex;
     width: 100%;
+    padding-left: 5vh;
 }
 
 .oneArtist:hover span{
@@ -38,9 +39,8 @@ defineProps({
   position:relative;
   display:inline-block;
   overflow:hidden;
-  text-align:center;
+  /* text-align:center; */
   vertical-align:middle;
-  line-height:150px; 
 }
 
 .couleur-remplissage:after{
