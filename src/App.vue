@@ -26,6 +26,9 @@ let tabArtists = ["oui", "deux", "trois", "adbehdj", "oui", "hihihihihihihihih"]
       <MenuArtist v-for="index in tabArtists" :key="index" :artist="index"/>
     </div>
   </section>
+  <!-- <div class="exemple-0 to-top bloc-couleur couleur-remplissage">
+    <div>to-top</div>
+  </div> -->
 </template>
 
 <style scoped>
