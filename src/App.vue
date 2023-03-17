@@ -2,18 +2,24 @@
 import Button from './components/Button.vue';
 import index from './components/StarryNight/index.vue';
 import MenuArtist from './components/MenuArtist.vue';
+import axios from 'axios';
+import { onBeforeMount, ref } from 'vue';
 
-// Début, implémenter back ensuite
-let tabArtists = [
-  "Léonard de Vinci",
-  "Pablo Picasso",
-  "Vincent Van Gogh",
-  "Sandro Botticelli",
-  "Edwrad Munch", 
-  "Johannes Vermeer", 
-  "Claude Monet",
-]
+let dataArtist = ref(); 
 
+onBeforeMount(async() =>{
+  await callData();
+})
+
+// onUpdated(async() =>{
+//   await callData();
+//   console.log("oui oui ");
+// })
+
+const callData = async() =>{
+  let response = await axios.get('/data.json');
+  dataArtist.value = await response.data;
+}
 </script>
 
 <template>
@@ -31,12 +37,9 @@ let tabArtists = [
   <section id="wrapper" class="flex-row">
     <div class="rowArtists flex-col">
       <!-- Faire un v-for avec un tab sans backend pour l'instant  -->
-      <MenuArtist v-for="index in tabArtists" :key="index" :artist="index"/>
+      <MenuArtist v-for="artist in dataArtist.artists" :key="artist" :artist="artist"/>
     </div>
   </section>
-  <!-- <div class="exemple-0 to-top bloc-couleur couleur-remplissage">
-    <div>to-top</div>
-  </div> -->
 </template>
 
 <style scoped>

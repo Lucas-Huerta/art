@@ -1,7 +1,7 @@
 <script setup>
 
 defineProps({
-  artist: String,
+  artist: null,
 })
 
 </script>
@@ -9,7 +9,7 @@ defineProps({
 <template>
     <div class="oneArtist to-top bloc-couleur couleur-remplissage">
         <span>
-            {{artist}}
+            {{ artist.name }}
         </span>
     </div>
 </template>

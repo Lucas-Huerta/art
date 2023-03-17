@@ -1,0 +1,123 @@
+{
+    "artists": [
+        {
+            "name": "Pablo Picasso", 
+            "profileImage": "../src", 
+            "paints":[
+                {
+                    "title": "oui oui",
+                    "image": "../src",
+                    "description": "lorem"
+                }, 
+                {
+                    "title": "oui oui",
+                    "image": "../src",
+                    "description": "lorem"
+                }
+            ]
+        }, 
+        {
+            "name": "Claude Monet", 
+            "profileImage": "../src", 
+            "paints":[
+                {
+                    "title": "oui oui",
+                    "image": "../src",
+                    "description": "lorem"
+                }, 
+                {
+                    "title": "oui oui",
+                    "image": "../src",
+                    "description": "lorem"
+                }
+            ]
+        },
+        {
+            "name": "Léonard de Vinci", 
+            "profileImage": "../src", 
+            "paints":[
+                {
+                    "title": "oui oui",
+                    "image": "../src",
+                    "description": "lorem"
+                }, 
+                {
+                    "title": "oui oui",
+                    "image": "../src",
+                    "description": "lorem"
+                }
+            ]
+        }, 
+        {
+            "name": "Vincent Van Gogh", 
+            "profileImage": "../src", 
+            "paints":[
+                {
+                    "title": "oui oui",
+                    "image": "../src",
+                    "description": "lorem"
+                }, 
+                {
+                    "title": "oui oui",
+                    "image": "../src",
+                    "description": "lorem"
+                }
+            ]
+        }, 
+        {
+            "name": "Edward Munch", 
+            "profileImage": "../src", 
+            "paints":[
+                {
+                    "title": "oui oui",
+                    "image": "../src",
+                    "description": "lorem"
+                }, 
+                {
+                    "title": "oui oui",
+                    "image": "../src",
+                    "description": "lorem"
+                }
+            ]
+        }, 
+        {
+            "name": "Johannes Vermeer", 
+            "profileImage": "../src", 
+            "paints":[
+                {
+                    "title": "oui oui",
+                    "image": "../src",
+                    "description": "lorem"
+                }, 
+                {
+                    "title": "oui oui",
+                    "image": "../src",
+                    "description": "lorem"
+                }
+            ]
+        }, 
+        {
+            "name": "Sandro Botticelli", 
+            "profileImage": "../src", 
+            "paints":[
+                {
+                    "title": "oui oui",
+                    "image": "../src",
+                    "description": "lorem"
+                }, 
+                {
+                    "title": "oui oui",
+                    "image": "../src",
+                    "description": "lorem"
+                }
+            ]
+        }
+    ], 
+    "museum":[
+        {
+            "name": "Louvre", 
+            "image": "../scr", 
+            "description": "lorem"
+        }
+    ] 
+}
