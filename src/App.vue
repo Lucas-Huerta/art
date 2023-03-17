@@ -69,7 +69,7 @@ let tabArtists = [
 
 .rowArtists{
   /* justify-content: space-evenly; */
-  align-items: center;
+  /* align-items: center; */
   /* height: fit-content; */
   height: 100%;
   width: 100%;

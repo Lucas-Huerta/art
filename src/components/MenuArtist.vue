@@ -18,15 +18,16 @@ defineProps({
 
 .oneArtist{
     /* rotate: 270deg; */
-    /* height: 100%; */
+    height: 100%;
     width: 100%;
+    border-bottom: 1px solid black;
 }
 .oneArtist span{
     color: var(--secondary-color);
-    border-bottom: 1px solid black;
     font-size: 90px;
     display: inline-flex;
     width: 100%;
+    height: 100%;
     padding-left: 5vh;
 }
 
