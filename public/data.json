@@ -3,6 +3,7 @@
         {
             "name": "Pablo Picasso", 
             "profileImage": "../src", 
+            "imageHover": "/img/artists/Picasso/guernica.jpg",
             "paints":[
                 {
                     "title": "oui oui",
@@ -19,10 +20,11 @@
         {
             "name": "Claude Monet", 
             "profileImage": "../src", 
+            "imageHover": "/img/artists/Monet/champsCoquelicot.jpeg",
             "paints":[
                 {
-                    "title": "oui oui",
-                    "image": "../src",
+                    "title": "Le champs de coquelicots",
+                    "image": "/img/artists/Monet/champsCoquelicot.jpeg",
                     "description": "lorem"
                 }, 
                 {
@@ -35,10 +37,11 @@
         {
             "name": "Léonard de Vinci", 
             "profileImage": "../src", 
+            "imageHover": "/img/artists/DeVinci/MonaLisa.jpeg",
             "paints":[
                 {
-                    "title": "oui oui",
-                    "image": "../src",
+                    "title": "Autoportrait",
+                    "image": "/img/artists/VanGogh/Autoportrait.jpeg",
                     "description": "lorem"
                 }, 
                 {
@@ -51,6 +54,7 @@
         {
             "name": "Vincent Van Gogh", 
             "profileImage": "../src", 
+            "imageHover": "/img/artists/VanGogh/Autoportrait.jpeg",
             "paints":[
                 {
                     "title": "oui oui",
@@ -67,6 +71,7 @@
         {
             "name": "Edward Munch", 
             "profileImage": "../src", 
+            "imageHover": "/img/artists/EdwardMunch/leCri.jpeg",
             "paints":[
                 {
                     "title": "oui oui",
@@ -83,6 +88,7 @@
         {
             "name": "Johannes Vermeer", 
             "profileImage": "../src", 
+            "imageHover": "/img/artists/JohannesVermeer/jeuneFillePerle.jpeg",
             "paints":[
                 {
                     "title": "oui oui",
@@ -99,6 +105,7 @@
         {
             "name": "Sandro Botticelli", 
             "profileImage": "../src", 
+            "imageHover": "/img/artists/Botticelli/lePrintemps.jpeg",
             "paints":[
                 {
                     "title": "oui oui",
