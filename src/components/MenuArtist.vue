@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed, onMounted, onUpdated } from 'vue';
+import { ref, computed } from 'vue';
 
 defineProps({
   artist: null,
@@ -74,9 +74,9 @@ let imageStyle = ref({});
     <span>
       {{ artist.name }}
     </span>
-    <div v-if="imageHover" class="cursor-image" :style="imageStyle" ref="cursorImage">
-      <img :src="artist.imageHover">
-    </div>
+  </div>
+  <div v-if="imageHover" class="cursor-image" :style="imageStyle" ref="cursorImage">
+    <img :src="artist.imageHover" alt="img">
   </div>
 </template>
 
@@ -91,8 +91,8 @@ let imageStyle = ref({});
 }
 
 .cursor-image img {
-  display: block;
-  margin: auto;
+  /* display: block;
+  margin: auto; */
   rotate: 90deg;
   width: 50%;
   height: 50%;
@@ -101,23 +101,22 @@ let imageStyle = ref({});
 
 .oneArtist{
   position: relative;
-    /* rotate: 270deg; */
-    height: 100%;
-    width: 100%;
-    border-bottom: 1px solid black;
+  height: 100%;
+  width: 100%;
+  border-bottom: 1px solid black;
 }
 .oneArtist span{
-    color: var(--secondary-color);
-    font-size: 90px;
-    display: inline-flex;
-    width: 100%;
-    height: 100%;
-    padding-left: 5vh;
+  color: var(--secondary-color);
+  font-size: 90px;
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  padding-left: 5vh;
 }
 
 .oneArtist:hover span{
-    color: white;
-    z-index: 10;
+  color: white;
+  z-index: 10;
 }
 
 .bloc-couleur {
