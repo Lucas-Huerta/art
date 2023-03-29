@@ -1,0 +1,4 @@
+
+<template>
+    MUSEUM COMPONENT
+</template>
