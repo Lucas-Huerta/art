@@ -1,6 +1,7 @@
 {
     "artists": [
         {
+            "id": "1",
             "name": "Pablo Picasso", 
             "profileImage": "../src", 
             "imageHover": "/img/artists/Picasso/guernica.jpg",
@@ -18,6 +19,7 @@
             ]
         }, 
         {
+            "id": "2",
             "name": "Claude Monet", 
             "profileImage": "../src", 
             "imageHover": "/img/artists/Monet/champsCoquelicot.jpeg",
@@ -35,6 +37,7 @@
             ]
         },
         {
+            "id": "3",
             "name": "Léonard de Vinci", 
             "profileImage": "../src", 
             "imageHover": "/img/artists/DeVinci/MonaLisa.jpeg",
@@ -52,6 +55,7 @@
             ]
         }, 
         {
+            "id": "4",
             "name": "Vincent Van Gogh", 
             "profileImage": "../src", 
             "imageHover": "/img/artists/VanGogh/Autoportrait.jpeg",
@@ -69,6 +73,7 @@
             ]
         }, 
         {
+            "id": "5",
             "name": "Edward Munch", 
             "profileImage": "../src", 
             "imageHover": "/img/artists/EdwardMunch/leCri.jpeg",
@@ -86,6 +91,7 @@
             ]
         }, 
         {
+            "id": "6",
             "name": "Johannes Vermeer", 
             "profileImage": "../src", 
             "imageHover": "/img/artists/JohannesVermeer/jeuneFillePerle.jpeg",
@@ -103,6 +109,7 @@
             ]
         }, 
         {
+            "id": "7",
             "name": "Sandro Botticelli", 
             "profileImage": "../src", 
             "imageHover": "/img/artists/Botticelli/lePrintemps.jpeg",
