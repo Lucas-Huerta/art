@@ -5,17 +5,13 @@ import MenuArtist from './components/MenuArtist.vue';
 import axios from 'axios';
 import { onBeforeMount, ref } from 'vue';
 import MenuMuseum from './components/MenuMuseum.vue';
+import Footer from './components/Footer.vue';
 
 let dataArtist = ref(); 
 
 onBeforeMount(async() =>{
   await callData();
 })
-
-// onUpdated(async() =>{
-//   await callData();
-//   console.log("oui oui ");
-// })
 
 const callData = async() =>{
   let response = await axios.get('/data.json');
@@ -53,40 +49,7 @@ const callData = async() =>{
   </section>
 
   <section id="wrapperFooter">
-    <footer>
-      <div class="flex-row">
-          <h2>
-            Hope you like ! 
-          </h2>
-      </div>
-      <div class="mainFooter flex-row">
-        <div class="flex-col">
-            <div class="rsFooter flex-row">
-                <span>
-                  Git
-                </span>
-                <span>
-                  Linkedin
-                </span>
-            </div>
-        </div>
-        <div class="flex-col">
-          <div class="flex-row">
-            Some of my favorite painters
-          </div>
-          <div class="flex-col">
-              <div class="flex-row"> <span>titre oeuvre</span></div>
-              <div class="flex-row"> <span>titre oeuvre</span></div>
-              <div class="flex-row"> <span>titre oeuvre</span></div>
-          </div>
-          </div>
-      </div>
-      <div class="legalFooter flex-row">
-        <span>Personnal project</span>
-        <span>2023</span>
-        <span>Lucas Huerta</span>
-      </div>
-    </footer>
+    <Footer />
   </section>
 
 </template>
@@ -121,9 +84,6 @@ const callData = async() =>{
 }
 
 .rowArtists{
-  /* justify-content: space-evenly; */
-  /* align-items: center; */
-  /* height: fit-content; */
   height: 100%;
   width: 100%;
   position: relative;
@@ -152,29 +112,5 @@ const callData = async() =>{
   width: 100vw;
   height: fit-content;
   color: var(--secondary-color);
-}
-
-#wrapperFooter footer{
-  height: 100%;
-  margin: 0 2vw 0 2vw ;
-}
-
-footer h2{
-  font-family: "Dahlia";
-  font-size: 40px;
-}
-
-.mainFooter{
-  justify-content: space-between;
-}
-
-.rsFooter{
-  gap: 5vw;
-}
-
-.legalFooter{
-  padding: 1vh 0;
-  justify-content: space-between;
-  font-family: "Dahlia";
 }
 </style>
