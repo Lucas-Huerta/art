@@ -1,7 +1,8 @@
 <script setup>
-import { ref, computed } from 'vue';
+import { ref } from 'vue';
+import router from '../router';
 
-defineProps({
+const props = defineProps({
   artist: null,
 })
 
@@ -14,12 +15,6 @@ let cursorImage = ref();
 
 let cardRect = ref();
 let cursorImageRect = ref();
-// function moveImage(event) {
-//   // console.log(event);
-//   imageHover.value = true
-//   mouseX.value = event.pageX
-//   mouseY.value = event.pageY
-// }
 
 const moveImage = async(event) =>{
   imageHover.value = true
@@ -39,27 +34,29 @@ const assignStyle = async() => {
     top: `${Math.max(0, Math.min(top, window.innerHeight - cursorImageRect.value.height))}px`,
     left: `${Math.max(0, Math.min(left, window.innerWidth - cursorImageRect.value.width))}px`
   }
-  console.log("style", imageStyle);
 }
 
+/**
+ * Méthode servant à assigner le style selon l'artiste qui est survolé
+ */
 const haveValues = async() => {
   cardRect.value = await card.value.getBoundingClientRect()
   cursorImageRect.value = await cursorImage.value.getBoundingClientRect();
   await assignStyle();
+}
 
-  // imageStyle.value = computed(() => {
-  //   let top = mouseY.value - cursorImageRect.value.height / 2
-  //   let left = mouseX.value - cursorImageRect.value.width / 2
-  //   // const top = mouseY.value - cursorImageRect.height / 2 - cardRect.top
-  //   // const left = mouseX.value - cursorImageRect.width / 2 - cardRect.left
-  //   return {
-  //     top: `${Math.max(0, Math.min(top, window.innerHeight - cursorImageRect.value.height))}px`,
-  //     left: `${Math.max(0, Math.min(left, window.innerWidth - cursorImageRect.value.width))}px`
-
-  //     // top: `${Math.max(0, Math.min(top, cardRect.height - cursorImageRect.height))}px`,
-  //     // left: `${Math.max(0, Math.min(left, cardRect.width - cursorImageRect.width))}px`
-  //   }
-  // })
+/**
+ * Méthode servant à push sur la route de l'artiste en question lorsque qu'on click dessus 
+ * @param {*} artist datas de l'artiste passées en props
+ */
+const goOneArtist = async(artist) => {
+    console.log("oui");
+    await router.push({
+        name: "Artist", 
+        params: {
+          id: artist.id
+        }
+    })
 }
 
 let imageStyle = ref({});
@@ -70,6 +67,7 @@ let imageStyle = ref({});
     v-on:mouseenter="moveImage"
     v-on:mouseleave="unMove"
     ref="card"
+    @click="goOneArtist(props.artist)"
   >
     <span>
       {{ artist.name }}
