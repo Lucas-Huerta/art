@@ -14,6 +14,7 @@
     "debounce": "^1.2.1",
     "hsl-to-hex": "^1.0.0",
     "lint": "^0.8.19",
+    "pinia": "^2.0.33",
     "pixi.js": "^7.1.4",
     "simplex-noise": "^4.0.1",
     "three": "^0.150.1",

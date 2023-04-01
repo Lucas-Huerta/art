@@ -50,7 +50,6 @@ const haveValues = async() => {
  * @param {*} artist datas de l'artiste passées en props
  */
 const goOneArtist = async(artist) => {
-    console.log("oui");
     await router.push({
         name: "Artist", 
         params: {

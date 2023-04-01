@@ -4,7 +4,9 @@ import {fragment} from './shaders/fragment'
 import {vertex} from './shaders/vertex'
 import * as THREE from 'three';
 import { ref, onMounted } from 'vue';
+import { useRoute } from 'vue-router';
 
+let route = useRoute();
 let canvas = ref(null);
 let t = 5;
 let backtrack = false;
@@ -26,16 +28,21 @@ const config = {
     ]
 }
 onMounted(async() => {
-    renderer = new THREE.WebGLRenderer({
-        powerPreference: "high-performance",
-        antialias: true, 
-        alpha: true,
-        canvas: canvas.value // canvas is the Id for our HTML5 canvas. Remove this line and Three will auto create a canvas.
-    });
-    renderer.setSize( elWidth, elHeight );
-    document.body.appendChild( renderer.domElement )
-    renderer.setPixelRatio( elWidth/elHeight );
-    animate();
+    if (route.fullPath === "/") {
+        renderer = new THREE.WebGLRenderer({
+            powerPreference: "high-performance",
+            antialias: true, 
+            alpha: true,
+            canvas: canvas.value // canvas is the Id for our HTML5 canvas. Remove this line and Three will auto create a canvas.
+        });
+        renderer.setSize(elWidth, elHeight);
+        document.body.appendChild(renderer.domElement)
+        renderer.setPixelRatio( elWidth/elHeight );
+        animate();
+    }else{
+        console.log("pas dans home");
+        canvas.style.display = 'none'
+    }
 })
     
     // Get el width and height
