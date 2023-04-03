@@ -1,24 +1,37 @@
 <script setup>
 import { useRoute } from 'vue-router';
-import { ref, onBeforeMount } from 'vue';
+import { ref, onBeforeMount, reactive } from 'vue';
 import { useArtistStore } from '../store/store';
 
 let route = useRoute();
 let artist = ref();
-let store = useArtistStore()
+let store = useArtistStore();
 
 onBeforeMount(async() => {
-    console.log("route", route.params.id);
     await store.getOneArtist(route.params.id);
     artist.value = JSON.parse(localStorage.OneArtist);
-    console.log(JSON.parse(localStorage.OneArtist));
 })
 
 </script>
 
 <template>
-    <div>
-        {{ artist }}
-        vue artiste
+    <div class="backgoundArtist" :style="{'background-image': 'url(' + artist.profileImage + ')'}">
+    </div>
+    <div class="flex-row rowArtist">
+        <span>
+            {{ artist.name }}
+        </span>
     </div>
 </template>
+
+<style scoped>
+
+.backgoundArtist{
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: contain;
+}
+</style>

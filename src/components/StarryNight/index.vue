@@ -3,14 +3,13 @@ import {noise} from './shaders/noise'
 import {fragment} from './shaders/fragment'
 import {vertex} from './shaders/vertex'
 import * as THREE from 'three';
-import { ref, onMounted } from 'vue';
-import { useRoute } from 'vue-router';
+import { ref, onMounted ,onUnmounted } from 'vue';
 
-let route = useRoute();
 let canvas = ref(null);
 let t = 5;
 let backtrack = false;
-let renderer;
+let renderer, camera, scene, mesh;
+let unMount = ref(false)
 
 const rgb = function(r, g, b) {
     return new THREE.Vector3(r, g, b);
@@ -28,31 +27,22 @@ const config = {
     ]
 }
 onMounted(async() => {
-    if (route.fullPath === "/") {
-        renderer = new THREE.WebGLRenderer({
-            powerPreference: "high-performance",
-            antialias: true, 
-            alpha: true,
-            canvas: canvas.value // canvas is the Id for our HTML5 canvas. Remove this line and Three will auto create a canvas.
-        });
-        renderer.setSize(elWidth, elHeight);
-        document.body.appendChild(renderer.domElement)
-        renderer.setPixelRatio( elWidth/elHeight );
-        animate();
-    }else{
-        console.log("pas dans home");
-        canvas.style.display = 'none'
-    }
-})
-    
+    canvas.value = document.getElementById("canvas");
+    unMount.value == false;
+    renderer = new THREE.WebGLRenderer({
+        powerPreference: "high-performance",
+        antialias: true, 
+        alpha: true,
+        canvas: canvas.value // canvas is the Id for our HTML5 canvas. Remove this line and Three will auto create a canvas.
+    });
     // Get el width and height
     let elWidth = window.innerWidth;
     let elHeight = window.innerHeight
+    camera = new THREE.PerspectiveCamera( 20, elWidth / elHeight, 0.1, 1000 );
+    scene = new THREE.Scene();
+    scene.add(camera)
     
     // Set sizes and set scene/camera
-    let scene = new THREE.Scene();
-    let camera = new THREE.PerspectiveCamera( 20, elWidth / elHeight, 0.1, 1000 );
-    
     let i = 2;
     // Check on colors to use
     let high = config.colors[i].high; 
@@ -83,16 +73,19 @@ onMounted(async() => {
         vertexShader: noise + vertex,
     });
     // Create the mesh and position appropriately
-    let mesh = new THREE.Mesh(geometry, material);
+    mesh = new THREE.Mesh(geometry, material);
     mesh.position.set(0, 0, -300);
     scene.add(mesh);
+    renderer.setSize(elWidth, elHeight);
+    document.body.appendChild(renderer.domElement)
+    renderer.setPixelRatio( elWidth/elHeight );
+    await animate();
+});
 
-    // This function when run will animate the renderer
-    // Meaning for every animation frame the 3d model
-    // will be rerendered onto the canvas.
-    const animate = function () {
+const animate = async() =>{
+    if (!unMount.value) {
         requestAnimationFrame( animate );
-        renderer.render( scene, camera );
+        await renderer.render( scene, camera );
         document.body.appendChild(renderer.domElement);
         mesh.material.uniforms.u_time.value = t;
         if(t < 10 && backtrack == false) {
@@ -104,7 +97,19 @@ onMounted(async() => {
                 backtrack = false;
             }
         }
-    };
+    }
+};
+
+onUnmounted(async() => {
+    // Nettoyage des éléments ThreeJS lorsque le composant est détruit
+    unMount.value = true
+    renderer.dispose();
+    scene = null;
+    camera = null
+
+    await canvas.value.parentNode.removeChild(canvas);
+});
+
 </script>
 
 <template>
@@ -120,7 +125,7 @@ onMounted(async() => {
   width: 100vw;
   height: 100vh;
   max-height: 100vh;
-  z-index: -1;
+  z-index: -2;
   transition: all 0.01s ease-out;
 }
 </style>

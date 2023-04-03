@@ -3,7 +3,7 @@
         {
             "id": "0",
             "name": "Pablo Picasso", 
-            "profileImage": "../src", 
+            "profileImage": "/img/artists/Picasso/guernica.jpg", 
             "imageHover": "/img/artists/Picasso/guernica.jpg",
             "paints":[
                 {
@@ -21,8 +21,8 @@
         {
             "id": "1",
             "name": "Claude Monet", 
-            "profileImage": "../src", 
-            "imageHover": "/img/artists/Monet/champsCoquelicot.jpeg",
+            "profileImage": "/img/artists/Monet/champsCoquelicot.jpeg", 
+            "imageHover": "/img/artists/Monet/La-pie-Monet.jpg",
             "paints":[
                 {
                     "title": "Le champs de coquelicots",
@@ -39,7 +39,7 @@
         {
             "id": "2",
             "name": "Léonard de Vinci", 
-            "profileImage": "../src", 
+            "profileImage": "/img/artists/DeVinci/MonaLisa.jpeg", 
             "imageHover": "/img/artists/DeVinci/MonaLisa.jpeg",
             "paints":[
                 {
@@ -57,7 +57,7 @@
         {
             "id": "3",
             "name": "Vincent Van Gogh", 
-            "profileImage": "../src", 
+            "profileImage": "/img/artists/VanGogh/van-gogh-la-nuit-etoilee.jpeg", 
             "imageHover": "/img/artists/VanGogh/Autoportrait.jpeg",
             "paints":[
                 {
@@ -75,7 +75,7 @@
         {
             "id": "4",
             "name": "Edward Munch", 
-            "profileImage": "../src", 
+            "profileImage": "/img/artists/EdwardMunch/leCri.jpeg", 
             "imageHover": "/img/artists/EdwardMunch/leCri.jpeg",
             "paints":[
                 {
@@ -93,7 +93,7 @@
         {
             "id": "5",
             "name": "Johannes Vermeer", 
-            "profileImage": "../src", 
+            "profileImage": "/img/artists/JohannesVermeer/jeuneFillePerle.jpeg", 
             "imageHover": "/img/artists/JohannesVermeer/jeuneFillePerle.jpeg",
             "paints":[
                 {
@@ -111,7 +111,7 @@
         {
             "id": "6",
             "name": "Sandro Botticelli", 
-            "profileImage": "../src", 
+            "profileImage": "/img/artists/Botticelli/lePrintemps.jpeg", 
             "imageHover": "/img/artists/Botticelli/lePrintemps.jpeg",
             "paints":[
                 {
