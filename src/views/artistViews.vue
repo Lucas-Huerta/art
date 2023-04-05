@@ -15,23 +15,92 @@ onBeforeMount(async() => {
 </script>
 
 <template>
-    <div class="backgoundArtist" :style="{'background-image': 'url(' + artist.profileImage + ')'}">
+    <div class="wrapperArtist">
+        <div class="backgoundArtist flex-col" :style="{'background-image': 'url(' + artist.profileImage + ')'}">
+            <div class="flex-row rowArtist">
+                <h2>
+                    {{ artist.name }}
+                </h2>
+            </div>
+        </div>
+        <section class="sectionInfos flex-col">
+            <div class="flex-row nameArtist">
+                <span>
+                    {{ artist.name }}
+                </span>
+            </div>
+            <div class="flex-row rowInfos">
+                <div class="textInfos">
+                    <p>
+                        {{ artist.description }}
+                    </p>
+                </div>
+                <div class="flex-col colOeuvre">
+                     <div class="flex-row rowOeuvre" v-for="oeuvre in artist.paints" :key="oeuvre">
+                        <span>
+                            {{ oeuvre.title }}
+                        </span>
+                        <div>
+                            @
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </section>
     </div>
-    <div class="flex-row rowArtist">
-        <span>
-            {{ artist.name }}
-        </span>
-    </div>
+
 </template>
 
 <style scoped>
 
+.wrapperArtist{
+    position: relative;
+    background-color: var(--primary-color);
+}
 .backgoundArtist{
-    position: absolute;
+    align-items: start;
+    justify-content: end;
     z-index: -1;
     width: 100vw;
     height: 100vh;
     background-position: center;
     background-size: contain;
 }
+.rowArtist h2{
+    font-family: "Dahlia";
+    font-weight: bold;
+    font-size: 60px;
+    margin: 0 0 2vh 2vw;
+}
+
+.sectionInfos{
+    margin: 5vh 2vw 0 2vw;
+    color: black;
+}
+
+.sectionInfos .nameArtist span{
+    font-family: "Dahlia";
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.sectionInfos .rowInfos{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.textInfos{
+    width: 55%;
+}
+
+.colOeuvre{
+    width: 35%;
+    justify-content: space-evenly;
+}
+
+.rowOeuvre{
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
 </style>

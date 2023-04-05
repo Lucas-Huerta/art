@@ -5,14 +5,25 @@
             "name": "Pablo Picasso", 
             "profileImage": "/img/artists/Picasso/guernica.jpg", 
             "imageHover": "/img/artists/Picasso/guernica.jpg",
+            "description": "Pablo Picasso était un artiste espagnol né en 1881 et décédé en 1973. Il a été l'un des artistes les plus influents du XXe siècle et est considéré comme l'un des fondateurs du mouvement cubiste. Sa carrière a commencé à la fin du 19ème siècle avec des peintures réalistes, mais il a rapidement évolué vers des styles plus modernes et expérimentaux. Il a également travaillé dans d'autres formes d'art, comme la sculpture et la gravure. Sa vie personnelle a été tumultueuse, avec des relations complexes et plusieurs mariages. Malgré cela, son héritage artistique reste impressionnant et son travail est largement reconnu comme faisant partie des plus grands de l'histoire de l'art.",
             "paints":[
                 {
-                    "title": "oui oui",
+                    "title": "Oeuvre",
                     "image": "../src",
                     "description": "lorem"
                 }, 
                 {
-                    "title": "oui oui",
+                    "title": "Oeuvre",
+                    "image": "../src",
+                    "description": "lorem"
+                }, 
+                {
+                    "title": "Oeuvre",
+                    "image": "../src",
+                    "description": "lorem"
+                }, 
+                {
+                    "title": "Oeuvre",
                     "image": "../src",
                     "description": "lorem"
                 }
@@ -23,14 +34,25 @@
             "name": "Claude Monet", 
             "profileImage": "/img/artists/Monet/champsCoquelicot.jpeg", 
             "imageHover": "/img/artists/Monet/La-pie-Monet.jpg",
+            "description": "Claude Monet était un peintre français né en 1840 et décédé en 1926. Il est considéré comme l'un des fondateurs de l'impressionnisme, un mouvement artistique qui a révolutionné la peinture au XIXe siècle. Monet est célèbre pour ses peintures de paysages, de jardins et de scènes urbaines, dans lesquelles il cherchait à capturer les effets de lumière et d'atmosphère. Il a travaillé en plein air, ce qui lui a permis de capturer les couleurs et les nuances de la nature de manière très vivante. Sa série de peintures de nénuphars, réalisée dans son jardin à Giverny, est particulièrement célèbre. Malgré des difficultés financières et personnelles, Monet a continué à peindre jusqu'à la fin de sa vie et est aujourd'hui considéré comme l'un des plus grands artistes de tous les temps.",
             "paints":[
                 {
-                    "title": "Le champs de coquelicots",
-                    "image": "/img/artists/Monet/champsCoquelicot.jpeg",
+                    "title": "Oeuvre",
+                    "image": "../src",
                     "description": "lorem"
                 }, 
                 {
-                    "title": "oui oui",
+                    "title": "Oeuvre",
+                    "image": "../src",
+                    "description": "lorem"
+                }, 
+                {
+                    "title": "Oeuvre",
+                    "image": "../src",
+                    "description": "lorem"
+                }, 
+                {
+                    "title": "Oeuvre",
                     "image": "../src",
                     "description": "lorem"
                 }
@@ -41,6 +63,7 @@
             "name": "Léonard de Vinci", 
             "profileImage": "/img/artists/DeVinci/MonaLisa.jpeg", 
             "imageHover": "/img/artists/DeVinci/MonaLisa.jpeg",
+            "description": "Leonardo da Vinci était un artiste, inventeur et scientifique italien né en 1452 et décédé en 1519. Il est considéré comme l'un des plus grands génies de l'histoire de l'humanité, ayant laissé une empreinte durable dans les domaines de l'art, de la science, de la technologie et de l'anatomie. Il est notamment célèbre pour ses tableaux comme la Joconde, la Cène et la Vierge aux rochers. Ses peintures sont caractérisées par leur réalisme, leur profondeur et leur subtilité. En plus de sa carrière d'artiste, Da Vinci était également un inventeur prolifique, ayant conçu des machines volantes, des ponts, des machines de guerre et bien plus encore. Sa curiosité insatiable et sa recherche constante de connaissances ont inspiré des générations d'artistes et de scientifiques et ont fait de lui une figure légendaire dans l'histoire de l'humanité.",
             "paints":[
                 {
                     "title": "Autoportrait",
@@ -59,14 +82,25 @@
             "name": "Vincent Van Gogh", 
             "profileImage": "/img/artists/VanGogh/van-gogh-la-nuit-etoilee.jpeg", 
             "imageHover": "/img/artists/VanGogh/Autoportrait.jpeg",
+            "description": "Vincent van Gogh était un peintre néerlandais né en 1853 et décédé en 1890. Il est connu pour ses peintures expressives et vibrantes, caractérisées par des couleurs vives et des coups de pinceau audacieux. Bien que van Gogh n'ait jamais reçu de reconnaissance significative de son vivant, il est aujourd'hui considéré comme l'un des artistes les plus influents de l'histoire de l'art occidental. Parmi ses œuvres les plus célèbres figurent Les Tournesols, La Nuit étoilée et La Chambre à coucher. Van Gogh a connu de nombreux défis personnels et professionnels tout au long de sa vie, notamment des troubles mentaux et des problèmes financiers. Il a passé les dernières années de sa vie en France, où il a produit certains de ses travaux les plus célèbres, avant de se suicider en 1890 à l'âge de 37 ans.",
             "paints":[
                 {
-                    "title": "oui oui",
+                    "title": "Oeuvre",
                     "image": "../src",
                     "description": "lorem"
                 }, 
                 {
-                    "title": "oui oui",
+                    "title": "Oeuvre",
+                    "image": "../src",
+                    "description": "lorem"
+                }, 
+                {
+                    "title": "Oeuvre",
+                    "image": "../src",
+                    "description": "lorem"
+                }, 
+                {
+                    "title": "Oeuvre",
                     "image": "../src",
                     "description": "lorem"
                 }
@@ -77,14 +111,25 @@
             "name": "Edward Munch", 
             "profileImage": "/img/artists/EdwardMunch/leCri.jpeg", 
             "imageHover": "/img/artists/EdwardMunch/leCri.jpeg",
+            "description": "Edward Munch était un peintre et graphiste norvégien né en 1863 et décédé en 1944. Il est surtout connu pour son tableau Le Cri, qui est devenu l'un des tableaux les plus célèbres au monde. Munch était un artiste expressionniste, qui cherchait à exprimer des émotions intenses et des expériences personnelles à travers ses œuvres. Il a également exploré des thèmes tels que la maladie, la mort, la sexualité et la vie urbaine dans son travail. Munch a connu une vie personnelle tumultueuse, avec des problèmes de santé mentale, des échecs amoureux et une dépendance à l'alcool. Malgré cela, il a continué à produire de l'art tout au long de sa vie, travaillant dans une variété de médiums, y compris la peinture, la gravure et le dessin. Son travail a influencé de nombreux artistes ultérieurs et continue d'être étudié et apprécié aujourd'hui.",
             "paints":[
                 {
-                    "title": "oui oui",
+                    "title": "Oeuvre",
                     "image": "../src",
                     "description": "lorem"
                 }, 
                 {
-                    "title": "oui oui",
+                    "title": "Oeuvre",
+                    "image": "../src",
+                    "description": "lorem"
+                }, 
+                {
+                    "title": "Oeuvre",
+                    "image": "../src",
+                    "description": "lorem"
+                }, 
+                {
+                    "title": "Oeuvre",
                     "image": "../src",
                     "description": "lorem"
                 }
@@ -95,14 +140,25 @@
             "name": "Johannes Vermeer", 
             "profileImage": "/img/artists/JohannesVermeer/jeuneFillePerle.jpeg", 
             "imageHover": "/img/artists/JohannesVermeer/jeuneFillePerle.jpeg",
+            "description": "Johannes Vermeer était un peintre hollandais né en 1632 et décédé en 1675. Il est connu pour ses peintures intimes et raffinées, qui représentent souvent des scènes de la vie quotidienne, comme des femmes en train de lire, de coudre ou de jouer de la musique. Vermeer est considéré comme l'un des plus grands peintres de l'âge d'or hollandais et est admiré pour sa maîtrise de la lumière, de la couleur et de la perspective. Il a créé un nombre relativement restreint de tableaux, mais chacun d'entre eux est considéré comme un chef-d'œuvre en raison de la minutie de leur réalisation et de leur composition subtile. Vermeer a connu un certain succès de son vivant, mais a ensuite été oublié pendant près de deux siècles, avant d'être redécouvert au XIXe siècle. Son travail a eu une influence considérable sur de nombreux artistes ultérieurs, notamment les impressionnistes, et continue d'inspirer et d'émerveiller les gens aujourd'hui.",
             "paints":[
                 {
-                    "title": "oui oui",
+                    "title": "Oeuvre",
                     "image": "../src",
                     "description": "lorem"
                 }, 
                 {
-                    "title": "oui oui",
+                    "title": "Oeuvre",
+                    "image": "../src",
+                    "description": "lorem"
+                }, 
+                {
+                    "title": "Oeuvre",
+                    "image": "../src",
+                    "description": "lorem"
+                }, 
+                {
+                    "title": "Oeuvre",
                     "image": "../src",
                     "description": "lorem"
                 }
@@ -113,14 +169,25 @@
             "name": "Sandro Botticelli", 
             "profileImage": "/img/artists/Botticelli/lePrintemps.jpeg", 
             "imageHover": "/img/artists/Botticelli/lePrintemps.jpeg",
+            "description": "Sandro Botticelli était un peintre italien né en 1445 et décédé en 1510. Il est considéré comme l'un des artistes les plus importants de la Renaissance italienne, connu pour ses peintures de sujets mythologiques et religieux, ainsi que pour ses portraits et ses fresques. Botticelli a étudié auprès de certains des artistes les plus célèbres de son époque, ce qui a influencé son style artistique distinctif caractérisé par des lignes douces, des couleurs pastel et des détails élaborés. Parmi ses œuvres les plus célèbres figurent La Naissance de Vénus, La Primavera et Le Printemps. Botticelli a également travaillé pour de riches mécènes et des institutions religieuses, contribuant à la création d'un certain nombre de fresques remarquables à Florence. Bien que Botticelli ait connu un certain succès de son vivant, il a également connu des difficultés financières et artistiques à la fin de sa vie. Son travail a influencé de nombreux artistes ultérieurs et continue d'être étudié et admiré aujourd'hui.",
             "paints":[
                 {
-                    "title": "oui oui",
+                    "title": "Oeuvre",
                     "image": "../src",
                     "description": "lorem"
                 }, 
                 {
-                    "title": "oui oui",
+                    "title": "Oeuvre",
+                    "image": "../src",
+                    "description": "lorem"
+                }, 
+                {
+                    "title": "Oeuvre",
+                    "image": "../src",
+                    "description": "lorem"
+                }, 
+                {
+                    "title": "Oeuvre",
                     "image": "../src",
                     "description": "lorem"
                 }
