@@ -196,9 +196,29 @@
     ], 
     "museum":[
         {
-            "name": "Louvre", 
-            "image": "../scr", 
-            "description": "lorem"
+            "name": "Musée du Louvre",
+            "image": "../scr",
+            "description": "Le Musée du Louvre est le plus grand musée d'art et d'antiquités du monde. Il abrite une collection impressionnante de plus de 35 000 œuvres d'art, allant de l'Antiquité à nos jours. Parmi ses trésors les plus célèbres figurent la Joconde, la Victoire de Samothrace et la Vénus de Milo."
+        },
+        {
+            "name": "Musée national d'Art moderne et contemporain de Corée",
+            "image": "../scr",
+            "description": "Le Musée national d'Art moderne et contemporain de Corée est un musée d'art situé à Séoul. Il abrite une collection importante d'art coréen et international, avec plus de 8 000 œuvres d'art allant du moderne à l'art contemporain."
+        },
+        {
+            "name": "Metropolitan Museum of Art",
+            "image": "../scr",
+            "description": "Le Metropolitan Museum of Art de New York est l'un des plus grands musées d'art du monde. Il abrite plus de deux millions d'œuvres d'art, allant de l'Antiquité à l'art moderne. Parmi ses trésors les plus célèbres figurent la statuette de Nefertiti et la collection égyptienne du musée."
+        },
+        {
+            "name": "Musée national d'Anthropologie",
+            "image": "../scr",
+            "description": "Le Musée national d'Anthropologie de Mexico est un musée d'anthropologie et d'archéologie qui abrite la plus grande collection d'artefacts préhispaniques du Mexique. Parmi ses trésors les plus célèbres figurent la Pierre du Soleil et la célèbre statue d'Aztec Xochipilli."
+        },
+        {
+            "name": "Musée du Prado",
+            "image": "../scr",
+            "description": "Le Musée du Prado est l'un des plus grands musées d'art du monde, situé à Madrid en Espagne. Il abrite une collection exceptionnelle de peintures européennes, notamment des œuvres de Diego Velázquez, Francisco de Goya et El Greco. Parmi ses trésors les plus célèbres figurent Las Meninas de Velázquez et Le Jardin des délices de Bosch."
         }
     ] 
 }

@@ -47,6 +47,20 @@ onBeforeMount(async() => {
                 </div>
             </div>
         </section>
+        <section class="sectionAddInfos flex-row">
+            <div class="rotateName flex-row">
+                <hr>
+                <span>{{ artist.name }}</span>
+                <hr>
+            </div>
+            <div class="textAdd">
+                Greatful artist born in - and die in - 
+                <br>
+                Origines 
+                <br>
+                Moments forts de sa vie 
+            </div>
+        </section>
     </div>
 
 </template>
@@ -56,6 +70,7 @@ onBeforeMount(async() => {
 .wrapperArtist{
     position: relative;
     background-color: var(--primary-color);
+    color: black;
 }
 .backgoundArtist{
     align-items: start;
@@ -71,11 +86,11 @@ onBeforeMount(async() => {
     font-weight: bold;
     font-size: 60px;
     margin: 0 0 2vh 2vw;
+    color: white;
 }
 
 .sectionInfos{
     margin: 5vh 2vw 0 2vw;
-    color: black;
 }
 
 .sectionInfos .nameArtist span{
@@ -101,6 +116,33 @@ onBeforeMount(async() => {
 .rowOeuvre{
     width: 100%;
     border-bottom: 1px solid black;
+}
+
+.sectionAddInfos{
+    width: 100%;
+    height: fit-content;
+    justify-content: flex-start;
+    align-items: center;
+}
+.sectionAddInfos .rotateName{
+    align-items: center;
+    justify-content: flex-start;
+    transform: rotate(270deg) ;
+    height: 100%;
+}
+
+.sectionAddInfos .rotateName hr{
+    border: solid 1px black;
+}
+
+.sectionAddInfos .rotateName span{
+    width: 100%;
+}
+
+.sectionAddInfos .textAdd{
+    font-family: "Dahlia";
+    font-size: 60px;
+    font-weight: bold;
 }
 
 </style>
