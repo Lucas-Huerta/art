@@ -2,6 +2,7 @@
 import { useRoute } from 'vue-router';
 import { ref, onBeforeMount, reactive } from 'vue';
 import { useArtistStore } from '../store/store';
+import Footer from '../components/Footer.vue';
 
 let route = useRoute();
 let artist = ref();
@@ -54,15 +55,15 @@ onBeforeMount(async() => {
                 <hr>
             </div>
             <div class="textAdd">
-                Greatful artist born in - and die in - 
+                Greatful artist born in {{ artist.born }} and die in {{ artist.death }} 
                 <br>
-                Origines 
-                <br>
-                Moments forts de sa vie 
+                who is from {{ artist.Origines }}
             </div>
         </section>
+        <Footer />
     </div>
 
+    
 </template>
 
 <style scoped>

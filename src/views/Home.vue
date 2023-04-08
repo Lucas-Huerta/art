@@ -63,7 +63,7 @@ const callData = async() =>{
 }
 
 .heroWrapper h1{
-  margin: 2vh 0 0 2vw;
+  margin: 6vh 0 0 2vw;
 }
 
 .heroWrapper .heroButton{
