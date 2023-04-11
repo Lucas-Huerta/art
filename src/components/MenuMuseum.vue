@@ -60,61 +60,52 @@
 
 <style scoped>
 
-
 .swiper {
   width: 100vw;
   height: 100vh;
-}
-.carousel {
   position: relative;
-  /* margin: 50px auto; */
-  width: 100vw;
-  height: 100vh;
-  /* height: 400px; */
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
-.carousel-inner {
-  position: relative;
+.swiper img {
   width: 100%;
   height: 100%;
 }
-
-.carousel-item {
-  position: absolute;
-  display: none;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.carousel-item img{
-    width: 100%;
-    height: 100%;
-}
-
-.carousel-item.active {
-  display: block;
-}
-
 .carousel-caption {
+  width: 100%;
+  height: 20vh;
+  padding: 15px;
   position: absolute;
   bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 15px;
   /* color: #fff; */
   /* background: rgba(0, 0, 0, 0.5); */
+  /* color: white; */
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center; */
+  /* height: 100%;
+  padding: 0 20px; */
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease-in-out;
 }
 
 .carousel-caption h3 {
-  margin: 0;
-  font-size: 36px;
+    font-weight: bold;
+    font-family: "Dahlia";
+    margin: 0 2vw;
+    font-size: 36px;
 }
 
 .carousel-caption p {
-  margin: 0;
-  font-size: 18px;
+    margin: 0 2vw;
+    font-size: 18px;
 }
 </style>
