@@ -1,34 +1,14 @@
 <script setup>
     import { onMounted, ref } from 'vue';
     import axios from 'axios';
-      // core version + navigation, pagination modules:
     import {Swiper, SwiperSlide} from 'swiper/vue';
     import { Pagination, Navigation } from 'swiper';
-    // import Swiper and modules styles
     import 'swiper/css';
     import 'swiper/css/navigation';
     import 'swiper/css/pagination';
 
     let items = ref();
     let modules = [Navigation, Pagination]
-
-    // const swiper = new Swiper('.swiper', {
-    //     modules: [Navigation],
-    //     // Optional parameters
-    //     direction: 'vertical',
-    //     loop: true,
-
-    //     // If we need pagination
-    //     pagination: {
-    //         el: '.swiper-pagination',
-    //     },
-
-    //     // Navigation arrows
-    //     navigation: {
-    //         nextEl: '.swiper-button-next',
-    //         prevEl: '.swiper-button-prev',
-    //     },
-    // });
 
     onMounted(async() => {
         items.value = await axios.get('/data.json');
@@ -70,6 +50,7 @@
   justify-content: end;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  color: white;
 }
 
 .swiper img {
@@ -82,14 +63,6 @@
   padding: 15px;
   position: absolute;
   bottom: 0;
-  /* color: #fff; */
-  /* background: rgba(0, 0, 0, 0.5); */
-  /* color: white; */
-  /* display: flex; */
-  /* justify-content: center;
-  align-items: center; */
-  /* height: 100%;
-  padding: 0 20px; */
   background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
