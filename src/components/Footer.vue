@@ -1,3 +1,19 @@
+<script setup>
+import axios from 'axios';
+import { onBeforeMount, ref } from 'vue';
+
+let dataArtist = ref(); 
+onBeforeMount(async() =>{
+  await callData();
+})
+
+const callData = async() =>{
+  let response = await axios.get('/data.json');
+  dataArtist.value = await response.data.artists;
+}
+
+</script>
+
 <template>
   <footer>
     <div class="flex-row">
@@ -21,9 +37,9 @@
           Some of my favorite painters
         </div>
         <div class="flex-col">
-          <div class="flex-row"> <span>titre oeuvre</span></div>
-          <div class="flex-row"> <span>titre oeuvre</span></div>
-          <div class="flex-row"> <span>titre oeuvre</span></div>
+          <div class="flex-row" v-for="(art, index) in dataArtist" :key="index"> 
+            <span class="favArtist">{{art.favoris == "true" ? art.name : ''}}</span>
+          </div>
         </div>
       </div>
     </div>
@@ -54,6 +70,11 @@ footer h2{
 
 .rsFooter{
   gap: 5vw;
+}
+
+.favArtist{
+  font-family: "Dahlia";
+  font-size: 20px;
 }
 
 .rsFooter a{

@@ -62,8 +62,6 @@ onBeforeMount(async() => {
         </section>
         <Footer />
     </div>
-
-    
 </template>
 
 <style scoped>
