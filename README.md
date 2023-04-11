@@ -1,7 +1,23 @@
-# Vue 3 + Vite
+# 🚀 Art, Vue3 & Vite
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This project was created in Vue js 3 using Vite. It aims to present painters I like and show some of their works. In conclusion a project to have fun and train myself ! 😁
 
-## Recommended IDE Setup
+## 🛠️ Installation
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+To install this project, you must first clone the repository to your local machine:
+
+### `git clone https://github.com/Lucas-Huerta/art.git`
+
+Once you have cloned the repository, you need to install the project dependencies by running the following command:
+
+### `npm install`
+
+## 🚀 Launch
+
+Once you have installed the project dependencies, you can launch the development server by running the following command:
+
+### `npm run dev`
+
+🚀 Open the link ! 
+
+Thank you for reading! If you have any questions or comments, please feel free to contact me !
