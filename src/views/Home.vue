@@ -42,9 +42,7 @@ const callData = async() =>{
       <h2>
         Discover fabulous museum
       </h2>
-      <div class="rowMuseum">
-        <MenuMuseum />
-      </div>
+      <MenuMuseum />
     </div>
   </section>
 

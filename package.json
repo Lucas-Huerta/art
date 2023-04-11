@@ -17,6 +17,7 @@
     "pinia": "^2.0.33",
     "pixi.js": "^7.1.4",
     "simplex-noise": "^4.0.1",
+    "swiper": "^9.2.0",
     "three": "^0.150.1",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
