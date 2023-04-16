@@ -24,10 +24,10 @@ const callData = async() =>{
     <div class="mainFooter flex-row">
       <div class="flex-col">
         <div class="rsFooter flex-row">
-          <a href="https://github.com/Lucas-Huerta" alt="lienGithub">
+          <a href="https://github.com/Lucas-Huerta" alt="lien Github" class="RSLink" target="_blank">
             Git
           </a>
-          <a href="https://www.linkedin.com/in/lucas-huerta13/" altt="lien linkedin">
+          <a href="https://www.linkedin.com/in/lucas-huerta13/" altt="lien linkedin" class="RSLink" target="_blank">
             Linkedin
           </a>
         </div>
@@ -44,7 +44,7 @@ const callData = async() =>{
       </div>
     </div>
       <div class="legalFooter flex-row">
-        <span>Personnal project</span>
+        <span>Just a personnal project</span>
         <span>2023</span>
         <span>Lucas Huerta</span>
       </div>
@@ -70,6 +70,19 @@ footer h2{
 
 .rsFooter{
   gap: 5vw;
+}
+
+.RSLink{
+  box-shadow: inset 0 0 0 0 var(--secondary-color);
+  color: var(--secondary-color);
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.RSLink:hover{
+  box-shadow: inset 100px 0 0 0 var(--secondary-color);
+  color: white;
 }
 
 .favArtist{

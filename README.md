@@ -1,6 +1,8 @@
 # 🖼️ Art, Vue3 & Vite
 
-This project was created in Vue js 3 using Vite. It aims to present painters I like and show some of their works. In conclusion a project to have fun and train myself ! 😁
+This project was created in Vue js 3 using Vite. It aims to present painters I like and show some of their works.  
+You can also find "generative art" with Three js ⭐️
+In conclusion a project to have fun and train myself ! 😁
 
 ## 🛠️ Installation
 

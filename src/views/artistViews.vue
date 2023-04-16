@@ -37,22 +37,18 @@ onBeforeMount(async() => {
                     </p>
                 </div>
                 <div class="flex-col colOeuvre">
-                     <div class="flex-row rowOeuvre" v-for="oeuvre in artist.paints" :key="oeuvre">
+                    <div class="flex-row rowOeuvre" v-for="oeuvre in artist.paints" :key="oeuvre">
                         <span>
                             {{ oeuvre.title }}
                         </span>
-                        <div>
-                            @
-                        </div>
-                     </div>
+                        <img class="imageSun" src="/sun.png" alt="sunImg"/>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="sectionAddInfos flex-row">
-            <div class="rotateName flex-row">
-                <hr>
+            <div class="rotateName flex-row">             
                 <span>{{ artist.name }}</span>
-                <hr>
             </div>
             <div class="textAdd">
                 Greatful artist born in {{ artist.born }} and die in {{ artist.death }} 
@@ -115,9 +111,17 @@ onBeforeMount(async() => {
 .rowOeuvre{
     width: 100%;
     border-bottom: 1px solid black;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.imageSun{
+    width: 2vw;
+    height: auto;
 }
 
 .sectionAddInfos{
+    margin: 5vh 0;
     width: 100%;
     height: fit-content;
     justify-content: flex-start;

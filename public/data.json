@@ -12,22 +12,22 @@
             "Origines": "Spain",
             "paints":[
                 {
-                    "title": "Oeuvre",
+                    "title": "Guernica",
+                    "image": "/img/artists/Picasso/guernica.jpg",
+                    "description": "lorem"
+                }, 
+                {
+                    "title": "Les demoiselles d'Avignon",
                     "image": "../src",
                     "description": "lorem"
                 }, 
                 {
-                    "title": "Oeuvre",
+                    "title": "Le vieux guitariste",
                     "image": "../src",
                     "description": "lorem"
                 }, 
                 {
-                    "title": "Oeuvre",
-                    "image": "../src",
-                    "description": "lorem"
-                }, 
-                {
-                    "title": "Oeuvre",
+                    "title": "Les 3 musiciens",
                     "image": "../src",
                     "description": "lorem"
                 }
@@ -45,22 +45,32 @@
             "Origines": "France",
             "paints":[
                 {
-                    "title": "Oeuvre",
+                    "title": "Impression, Soleil levant",
                     "image": "../src",
                     "description": "lorem"
                 }, 
                 {
-                    "title": "Oeuvre",
+                    "title": "Le jardin de l’artiste à Giverny",
                     "image": "../src",
                     "description": "lorem"
                 }, 
                 {
-                    "title": "Oeuvre",
+                    "title": "Le champ de coquelicots",
                     "image": "../src",
                     "description": "lorem"
                 }, 
                 {
-                    "title": "Oeuvre",
+                    "title": "La promenade",
+                    "image": "../src",
+                    "description": "lorem"
+                },
+                {
+                    "title": "Les nymphéas",
+                    "image": "../src",
+                    "description": "lorem"
+                },
+                {
+                    "title": "La pie",
                     "image": "../src",
                     "description": "lorem"
                 }
@@ -78,12 +88,17 @@
             "Origines": "Italy",
             "paints":[
                 {
-                    "title": "Autoportrait",
-                    "image": "/img/artists/VanGogh/Autoportrait.jpeg",
+                    "title": "La dernière cène",
+                    "image": "../src",
                     "description": "lorem"
                 }, 
                 {
-                    "title": "oui oui",
+                    "title": "Mona lisa",
+                    "image": "/img/artists/DeVinci/MonaLisa.jpeg",
+                    "description": "lorem"
+                }, 
+                {
+                    "title": "La dame à l’hermine",
                     "image": "../src",
                     "description": "lorem"
                 }
@@ -101,22 +116,37 @@
             "Origines": "Netherlands",
             "paints":[
                 {
-                    "title": "Oeuvre",
+                    "title": "La nuit étoilée",
+                    "image": "/img/artists/VanGogh/van-gogh-la-nuit-etoilee.jpeg",
+                    "description": "lorem"
+                }, 
+                {
+                    "title": "Terrasse du café le soir ",
                     "image": "../src",
                     "description": "lorem"
                 }, 
                 {
-                    "title": "Oeuvre",
+                    "title": "L’autoportrait",
+                    "image": "/img/artists/VanGogh/Autoportrait.jpeg",
+                    "description": "lorem"
+                }, 
+                {
+                    "title": "Le café de nuit",
                     "image": "../src",
                     "description": "lorem"
                 }, 
                 {
-                    "title": "Oeuvre",
+                    "title": "Les iris ",
                     "image": "../src",
                     "description": "lorem"
                 }, 
                 {
-                    "title": "Oeuvre",
+                    "title": "Les mangeurs de pommes de terre",
+                    "image": "../src",
+                    "description": "lorem"
+                },
+                {
+                    "title": "La nuit étoilée sur le rhône",
                     "image": "../src",
                     "description": "lorem"
                 }
@@ -134,23 +164,8 @@
             "Origines": "Norway",
             "paints":[
                 {
-                    "title": "Oeuvre",
-                    "image": "../src",
-                    "description": "lorem"
-                }, 
-                {
-                    "title": "Oeuvre",
-                    "image": "../src",
-                    "description": "lorem"
-                }, 
-                {
-                    "title": "Oeuvre",
-                    "image": "../src",
-                    "description": "lorem"
-                }, 
-                {
-                    "title": "Oeuvre",
-                    "image": "../src",
+                    "title": "Le cri ",
+                    "image": "/img/artists/EdwardMunch/leCri.jpeg",
                     "description": "lorem"
                 }
             ]
@@ -167,23 +182,8 @@
             "Origines": "Holland",
             "paints":[
                 {
-                    "title": "Oeuvre",
-                    "image": "../src",
-                    "description": "lorem"
-                }, 
-                {
-                    "title": "Oeuvre",
-                    "image": "../src",
-                    "description": "lorem"
-                }, 
-                {
-                    "title": "Oeuvre",
-                    "image": "../src",
-                    "description": "lorem"
-                }, 
-                {
-                    "title": "Oeuvre",
-                    "image": "../src",
+                    "title": "La jeune fille à la perle ",
+                    "image": "/img/artists/JohannesVermeer/jeuneFillePerle.jpeg",
                     "description": "lorem"
                 }
             ]
@@ -200,22 +200,12 @@
             "Origines": "Italy",
             "paints":[
                 {
-                    "title": "Oeuvre",
-                    "image": "../src",
+                    "title": "La naissance de Vénus ",
+                    "image": "/img/artists/Botticelli/lePrintemps.jpeg",
                     "description": "lorem"
                 }, 
                 {
-                    "title": "Oeuvre",
-                    "image": "../src",
-                    "description": "lorem"
-                }, 
-                {
-                    "title": "Oeuvre",
-                    "image": "../src",
-                    "description": "lorem"
-                }, 
-                {
-                    "title": "Oeuvre",
+                    "title": "Le printemps",
                     "image": "../src",
                     "description": "lorem"
                 }

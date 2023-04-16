@@ -19,7 +19,11 @@ defineProps({
     font-size: 28px;
     color: black;
     text-align: center;
-    background-color: var(--primary-color);
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out;
     border: 1px var(--secondary-color) solid;
     border-radius: 13px;
     width: 10vw;
@@ -27,7 +31,6 @@ defineProps({
 
 .button:hover{
     color: white;
-    background-color: var(--secondary-color);
     border: 1px var(--primary-color) solid;
     border-radius: 13px;
     transition: 0.2s ease-in-out;
